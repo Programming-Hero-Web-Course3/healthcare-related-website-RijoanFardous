@@ -1,5 +1,7 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
+import Login from './Pages/LoginSignup/Login/Login';
+import Signup from './Pages/LoginSignup/Signup/Signup';
 import Footer from './Pages/SharedComponent/Footer/Footer';
 import Header from './Pages/SharedComponent/Header/Header';
 
@@ -14,8 +16,12 @@ function App() {
           <Route path="/services"></Route>
           <Route path="/pricing"></Route>
           <Route path="/news"></Route>
-          <Route path="/login"></Route>
-          <Route path="/signup"></Route>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+          <Route path="/signup">
+            <Signup></Signup>
+          </Route>
           <Route path="*"></Route>
         </Switch>
         <Footer></Footer>
