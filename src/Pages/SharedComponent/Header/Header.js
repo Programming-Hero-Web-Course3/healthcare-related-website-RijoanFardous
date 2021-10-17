@@ -11,7 +11,7 @@ import { Link, NavLink } from 'react-router-dom';
 const Header = () => {
     return (
         <div>
-            <Navbar bg="light" variant="light" expand="lg" sticky="top" className="shadow-sm">
+            <Navbar bg="light" variant="light" expand="lg" fixed="top" className="shadow-sm">
                 <Container>
                     <Navbar.Brand>
                         <img

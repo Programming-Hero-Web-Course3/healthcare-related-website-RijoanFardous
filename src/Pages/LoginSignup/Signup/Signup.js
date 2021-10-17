@@ -10,7 +10,7 @@ const Signup = () => {
     const onSubmit = data => console.log(data);
 
     return (
-        <Container fluid className="signup-full-container">
+        <Container fluid className="signup-full-container mt-5">
             <Container>
                 <Row>
                     <Col md={12} lg={5} className="mt-3 mt-lg-0 p-3 p-lg-5 bg-light ms-auto">
