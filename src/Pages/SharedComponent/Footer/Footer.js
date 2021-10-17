@@ -28,7 +28,7 @@ const Footer = () => {
                     </Col>
                     <Col xs={6} md={3}>
                         <h6 className="fw-bold mt-3">CONTACT US</h6>
-                        623 Harrison St, 2nd Floor, San Francisco, CA 94107 <br />
+                        623 Harrison St, 2nd Floor <br /> San Francisco, CA 94107 <br />
                         415-201-6370 <br />
                         info@healthgenic.com
                     </Col>
