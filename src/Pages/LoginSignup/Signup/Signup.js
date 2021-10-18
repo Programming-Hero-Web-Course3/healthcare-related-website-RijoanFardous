@@ -3,6 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import './Signup.css';
 import { useForm } from "react-hook-form";
 import { Link } from 'react-router-dom';
+import logo from '../../../Images/logo.png';
 
 
 const Signup = () => {
@@ -15,11 +16,11 @@ const Signup = () => {
                 <Row>
                     <Col md={12} lg={5} className="mt-3 mt-lg-0 p-3 p-lg-5 bg-light ms-auto">
                         <Row>
-                            <Col xs={6} className="d-flex align-items-center">
-                                <h2 className="fw-bold ms-lg-4">SIGN UP</h2>
-                            </Col>
                             <Col xs={6}>
-
+                                <img src={logo} alt="" className="img-fluid" />
+                            </Col>
+                            <Col xs={6} className="d-flex align-items-center justify-content-end">
+                                <h2 className="fw-bold ms-lg-4 text-right">SIGN UP</h2>
                             </Col>
                         </Row>
                         <h6 className="mb-5 ms-lg-4">Sign up and get one time free seviece.</h6>

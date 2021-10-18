@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "image": "https://i.ibb.co/bWsjt0j/neurologist.jpg",
+        "icon": "https://i.ibb.co/tKz3HhV/neurology.png",
+        "name": "Neurology",
+        "description": "Neurology is the branch of medicine concerned with the study and treatment of disorders of the nervous system."
+    },
+    {
+        "id": 3,
+        "image": "https://i.ibb.co/swVfST8/cardiologist.jpg",
+        "icon": "https://i.ibb.co/Q67vYdW/cardiology.png",
+        "name": "Cardiology",
+        "description": "Cardiology is a branch of medicine that deals with the disorders of the heart as well as some parts of the circulatory system."
+    },
+    {
+        "id": 5,
+        "image": "https://i.ibb.co/WsnRjbk/Gastroenterologist.jpg",
+        "icon": "https://i.ibb.co/MfbkxVH/gastroenterology.png",
+        "name": "Gastroenterology",
+        "description": "Gastroenterology is the branch of medicine focused on the digestive system and its disorders. Diseases affecting tract."
+    }
+]

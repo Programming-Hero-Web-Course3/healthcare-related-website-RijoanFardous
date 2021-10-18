@@ -1,0 +1,20 @@
+.f-service-background{
+    background-color: #025955;
+    height: 450px;
+}
+.fea-service{
+    margin-top: -225px;
+    z-index: 1;
+}
+
+.service-background{
+    z-index: -5;
+    margin-top: -275px;
+    height: 350px;
+}
+
+@media (max-width: 765px) {
+    .fea-service{
+        margin-top: 0;
+    }
+}

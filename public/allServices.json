@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "image": "https://i.ibb.co/bWsjt0j/neurologist.jpg",
+        "icon": "https://i.ibb.co/tKz3HhV/neurology.png",
+        "name": "Neurology",
+        "description": "Neurology is the branch of medicine concerned with the study and treatment of disorders of the nervous system."
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co/z71KQpR/orthopedic.jpg",
+        "icon": "https://i.ibb.co/xJhdw4h/orthopedic.png",
+        "name": "Orthopedics",
+        "description": "Orthopaedic surgery or orthopaedics, is the branch of surgery concerned with conditions involving the musculoskeletal system."
+    },
+    {
+        "id": 3,
+        "image": "https://i.ibb.co/swVfST8/cardiologist.jpg",
+        "icon": "https://i.ibb.co/Q67vYdW/cardiology.png",
+        "name": "Cardiology",
+        "description": "Cardiology is a branch of medicine that deals with the disorders of the heart as well as some parts of the circulatory system."
+    },
+    {
+        "id": 4,
+        "image": "https://i.ibb.co/5sxxBm3/hematologist.jpg",
+        "icon": "https://i.ibb.co/pnQft2H/hematology.png",
+        "name": "Hematology",
+        "description": "Hematology is the branch of medicine concerned with the study of the cause, treatment, prevention of diseases related to blood."
+    },
+    {
+        "id": 5,
+        "image": "https://i.ibb.co/WsnRjbk/Gastroenterologist.jpg",
+        "icon": "https://i.ibb.co/MfbkxVH/gastroenterology.png",
+        "name": "Gastroenterology",
+        "description": "Gastroenterology is the branch of medicine focused on the digestive system and its disorders. Diseases affecting tract."
+    },
+    {
+        "id": 6,
+        "image": "https://i.ibb.co/fxtbm87/Ophthalmology.jpg",
+        "icon": "https://i.ibb.co/TkBRP6m/Ophthalmology.png",
+        "name": "Ophthalmology",
+        "description": "Ophthalmology is a branch of medicine and surgery that deals with the diagnosis and treatment of disorders of the eye."
+    }
+]
