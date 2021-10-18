@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "COVID-19: What do we know about the C.1.2 variant?",
+        "writer": "Annie Lennon",
+        "image": "https://image.freepik.com/free-vector/covid-coronavirus-real-3d-illustration-concept-describe-about-corona-virus-anatomy-type_17005-733.jpg",
+        "description": "The more viruses spread, the more likely they are to mutate and form different variants. Variants that become more transmissible. When a virus is widely circulating in a population and causing many infections, the likelihood of the virus mutating increases......."
+    },
+    {
+        "id": 2,
+        "title": "DNA vs. mRNA vaccines: Similarities and differences",
+        "writer": "Deep Shukla",
+        "image": "https://image.freepik.com/free-vector/abstract-dna-background_52683-7652.jpg",
+        "description": "DNA and RNA vaccines use genetic material to deliver information to human cells and elicit an immune response. DNA vaccines Both strands of double-stranded DNA store the same biological information. This information is replicated as and when the two....."
+    },
+    {
+        "id": 3,
+        "title": "Hypertension, gut bacteria, and sleep apnea: Is there a link?",
+        "writer": "Tim Newman",
+        "image": "https://image.freepik.com/free-vector/microscopic-virus-bacteria-florating-background_1017-24227.jpg",
+        "description": "Central apnea, which is relatively rare, occurs when the brain does not send appropriate signals to the muscles engaged in......"
+    },
+    {
+        "id": 4,
+        "title": "What’s the link between mental health and allergies?",
+        "writer": "Robby Berman",
+        "image": "https://image.freepik.com/free-vector/brain-digital-brain-hand-neural-network_127544-844.jpg",
+        "description": "A new study of data from the UK Biobank confirms the correlation between allergies and mental health. However, correlation......"
+    },
+    {
+        "id": 5,
+        "title": "Researchers plan review of cruise ship COVID-19 outbreaks",
+        "writer": "Sam Hancock",
+        "image": "https://d2jx2rerrg6sh3.cloudfront.net/image-handler/ts/20211018101912/ri/950/picture/2021/10/shutterstock_1725071392.jpg",
+        "description": "Coronavirus disease 2019 has caused over 4.9 million deaths and lead to worldwide economic crises. The disease spreads rapidly. The droplets can remain in the air for long periods and easily cover over 1m distance. Therefore, remaining near an infected individual...."
+    },
+    {
+        "id": 6,
+        "title": "Production of Biopolymers by Microorganisms",
+        "writer": "Micheal Greenwood",
+        "image": "https://d2jx2rerrg6sh3.cloudfront.net/image-handler/ts/20211004111711/ri/673/picture/2021/10/shutterstock_1646466403.jpg",
+        "description": "Biopolymers include any polymers produced by living cells, constructed from repeating monomers that are linked together to form a longer chain. Examples of monomers include nucleic acids, sugars, fatty acids, and phosphates, which are generally assembled..."
+    }
+]

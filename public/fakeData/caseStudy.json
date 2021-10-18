@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Complete Surgery",
+        "type": "Surgery",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Cardiac_surgery_operating_room.jpg",
+        "description": "Surgery is a medical or dental specialty that uses operative manual and instrumental techniques on a person to investigate or treat a pathological condition such as....."
+    },
+    {
+        "id": 2,
+        "name": "Medical Scanner",
+        "type": "Research",
+        "image": "https://static.turbosquid.com/Preview/001190/957/9W/computed-scanner-medical-3D-model_0.jpg",
+        "description": "Medical imaging is the technique and process of imaging the interior of a body for clinical analysis and medical intervention, as well as visual representation of the....."
+    },
+    {
+        "id": 3,
+        "name": "Bariatric Surgery",
+        "type": "Departments",
+        "image": "https://ichef.bbci.co.uk/news/976/cpsprodpb/1D85/production/_104075570_surgery1.jpg",
+        "description": "Bariatric surgery includes a variety of procedures performed on people who are obese. Long term weight loss through standard of care....."
+    },
+    {
+        "id": 4,
+        "name": "Modern Medicine",
+        "type": "Medical",
+        "image": "https://cdn.bangkokhospital.com/2020/04/IHL-C-Surgery.jpg",
+        "description": "Conventional modern medicine is sometimes called allopathic medicine. It involves the use of drugs or surgery, often supported by counseling and lifestyle measures. Alternative and....."
+    },
+    {
+        "id": 5,
+        "name": "Treat Transplant",
+        "type": "Surgery",
+        "image": "https://southwestsurgical.com/wp-content/uploads/2018/10/p-c-mkt93502-stack-gensurgery.jpg",
+        "description": "A bone marrow transplant is also called a stem cell transplant or, more specifically, a hematopoietic stem cell transplant. Transplantation can be used to treat certain types of cancer....."
+    },
+    {
+        "id": 6,
+        "name": "Pulmonology Care",
+        "type": "Medical",
+        "image": "https://cdn.bcm.edu/sites/default/files/styles/full_width_component_image_standard/public/media/images/pulmonary-page.jpg?h=88ef2456&itok=vq_QwFLL",
+        "description": "The Institute of Pulmonology at CARE Hospitals is a subspecialty of internal medicine that deals with diseases of the lungs and the bronchial tubes, usually involving the evaluation of the upper. This field is also known as chest....."
+    }
+]

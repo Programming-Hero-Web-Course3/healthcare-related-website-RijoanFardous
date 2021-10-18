@@ -3,6 +3,7 @@ import './App.css';
 import Home from './Pages/HomePage/Home/Home';
 import Login from './Pages/LoginSignup/Login/Login';
 import Signup from './Pages/LoginSignup/Signup/Signup';
+import Newsletter from './Pages/NewsPage/NewLetter/Newsletter';
 import NotFound from './Pages/NotFound/NotFound';
 import Services from './Pages/ServicesPage/Services/Services';
 import Footer from './Pages/SharedComponent/Footer/Footer';
@@ -24,7 +25,9 @@ function App() {
             <Services></Services>
           </Route>
           <Route path="/appointment"></Route>
-          <Route path="/news"></Route>
+          <Route path="/news">
+            <Newsletter></Newsletter>
+          </Route>
           <Route path="/login">
             <Login></Login>
           </Route>
