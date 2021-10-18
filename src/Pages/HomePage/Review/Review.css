@@ -1,0 +1,23 @@
+.review-details{
+    border: 2px solid #003638;
+    margin-left: -55px;
+    padding-left: 80px;
+    background-color: #003638;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.reveiwer{
+    z-index: 1;
+}
+
+.image-gallery{
+    border: 2px solid #003638;
+    padding: 5px;
+}
+
+.testomonial{
+    padding: 100px 0px !important;
+}

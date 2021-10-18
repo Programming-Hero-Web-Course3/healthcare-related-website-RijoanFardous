@@ -1,0 +1,23 @@
+[
+    {
+        "rId": 1,
+        "name": "Pedro Lucas",
+        "country": "Canada",
+        "image": "https://randomuser.me/api/portraits/men/44.jpg",
+        "message": "It's very well mannered staff good coordination with patients. Mrs. Praveena garu assisted very well and taken good care towards patients."
+    },
+    {
+        "rId": 2,
+        "name": "Jeffery Silva",
+        "country": "Switzerland",
+        "image": "https://randomuser.me/api/portraits/men/22.jpg",
+        "message": "Dr. Willard Diaz is very experienced opthalmologist doctor in Hyderabad. I have been consulting him for 10+ years for me."
+    },
+    {
+        "rId": 3,
+        "name": "Barry Gardner",
+        "country": "England",
+        "image": "https://randomuser.me/api/portraits/men/78.jpg",
+        "message": "Recently visited health check up department of Apollo Hospital for a whole body check up. The entire process from check in to the end was seamless."
+    }
+]
