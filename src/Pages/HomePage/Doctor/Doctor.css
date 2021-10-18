@@ -1,0 +1,46 @@
+.doc-image{
+    width: 200px;
+    height: 200px;
+}
+
+.doc-image img{
+    width: 200px;
+    height: 200px;
+}
+
+.doctor{
+width: 200px;
+}
+
+.doctor-text{
+    height: 180px;
+    padding-top: 110px;
+    background-color: #003638;
+    color: white;
+    margin-top: -100px;
+}
+
+@media (max-width: 700px) {
+    .doc-image{
+        width: 150px;
+        height: 150px;
+    }
+    
+    .doc-image img{
+        width: 150px;
+        height: 150px;
+    }
+    
+    .doctor{
+        width: 150px;
+    }
+    
+    .doctor-text{
+        height: 150px;
+        padding-top: 65px;
+        background-color: #003638;
+        color: white;
+        margin-top: -65px;
+        box-shadow: rgb(255, 255, 255) 0px 7px 29px 0px !important;
+    }
+}

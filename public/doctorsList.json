@@ -1,0 +1,38 @@
+[
+    {
+        "doctorID": 1,
+        "image": "https://i.ibb.co/F51dLYh/doctor1.jpg",
+        "name": "Dr. Willard Diaz",
+        "department": "Neurology Dept"
+    },
+    {
+        "doctorID": 2,
+        "image": "https://i.ibb.co/pf157W0/doctor2.jpg",
+        "name": "Dr. Austin Diaz",
+        "department": "Orthopedics Dept"
+    },
+    {
+        "doctorID": 3,
+        "image": "https://i.ibb.co/JqWmR6n/doctor3.jpg",
+        "name": "Dr. Frank Holland",
+        "department": "Cardiology Dept"
+    },
+    {
+        "doctorID": 4,
+        "image": "https://i.ibb.co/xSzzQTy/doctor4.jpg",
+        "name": "Dr. Marian Holt",
+        "department": "Hematology Dept"
+    },
+    {
+        "doctorID": 5,
+        "image": "https://i.ibb.co/x8DNzC6/doctor5.jpg",
+        "name": "Dr. Everett Garcia",
+        "department": "Gastroenterology Dept"
+    },
+    {
+        "doctorID": 6,
+        "image": "https://i.ibb.co/Mc0MJK4/doctor6.jpg",
+        "name": "Dr. Ken Long",
+        "department": "Ophthalmology Dept"
+    }
+]

@@ -26,8 +26,6 @@ const FeaturedServices = () => {
                     </Row>
                 </Container>
             </Container>
-            <Row>
-            </Row>
             <Container>
                 <Row className="row g-4">
                     {
