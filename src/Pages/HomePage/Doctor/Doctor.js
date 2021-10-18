@@ -12,8 +12,8 @@ const Doctor = (props) => {
                 numId ?
                     <div>
                         <div className="doctor mx-auto mx-lg-0">
-                            <div className="doc-image rounded-circle">
-                                <img src={image} alt="" className="rounded-circle" />
+                            <div className="doc-image">
+                                <img src={image} alt="" />
                             </div>
                             <div className="doctor-text">
                                 <h5 className="fw-bold text-center">{name}</h5>
@@ -23,8 +23,8 @@ const Doctor = (props) => {
                     </div> :
                     <div className="d-lg-flex justify-content-end">
                         <div className="doctor mx-auto mx-lg-0">
-                            <div className="doc-image rounded-circle">
-                                <img src={image} alt="" className="rounded-circle" />
+                            <div className="doc-image">
+                                <img src={image} alt="" />
                             </div>
                             <div className="doctor-text">
                                 <h5 className="fw-bold text-center">{name}</h5>

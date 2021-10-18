@@ -22,6 +22,12 @@ const Review = () => {
         <div className="py-5 bg-light testomonial">
             <Container>
                 <Row>
+                    <Col xs={12} md={6} className="mb-4">
+                        <h6>TESTOMONIALS!</h6>
+                        <h1 className="fw-bold">See What People Say About Us.</h1>
+                    </Col>
+                </Row>
+                <Row>
                     <Col xs={12} lg={6}>
                         {
                             reviews.map(review => <div className="d-flex mb-3">
