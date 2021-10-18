@@ -6,7 +6,7 @@ import './Doctors.css';
 const Doctors = () => {
     const [doctors, setDoctors] = useState([]);
     useEffect(() => {
-        fetch('./doctorsList.json')
+        fetch('./fakeData/doctorsList.json')
             .then(data => data.json())
             .then(result => setDoctors(result))
     }, [])

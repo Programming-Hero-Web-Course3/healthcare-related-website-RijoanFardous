@@ -6,7 +6,7 @@ import './FeaturedServices.css';
 const FeaturedServices = () => {
     const [fServices, setFService] = useState([]);
     useEffect(() => {
-        fetch('./featuredServices.json')
+        fetch('./fakeData/featuredServices.json')
             .then(data => data.json())
             .then(result => setFService(result))
     }, [])
