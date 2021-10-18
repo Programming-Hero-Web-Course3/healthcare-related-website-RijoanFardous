@@ -13,7 +13,7 @@ const FeaturedServices = () => {
     return (
         <div>
             <Container fluid className="f-service-background mb-4 mb-md-0">
-                <Container className="pt-5 text-white">
+                <Container className="pt-5 text-white f-service-background2">
                     <Row>
                         <Col xs={12} md={5}>
                             <h5>BEST CARE!</h5>

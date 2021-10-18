@@ -1,6 +1,12 @@
 .f-service-background{
     background-color: #025955;
-    height: 450px;
+    height: 650px;
+    margin-top: 0px;
+    z-index: -500;
+    padding: 180px;
+}
+.f-service-background2{
+    z-index: -400;
 }
 .fea-service{
     margin-top: -225px;
