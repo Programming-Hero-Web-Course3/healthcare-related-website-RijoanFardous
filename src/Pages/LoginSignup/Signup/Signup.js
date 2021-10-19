@@ -9,7 +9,7 @@ import { useHistory, useLocation } from 'react-router';
 
 
 const Signup = () => {
-    const { setUser, setError, signInWithGoogle } = useAuth();
+    const { setEmail, setPassword, setUserName, setUser, setError, signInWithGoogle, handleCreateNewUser, verifyEmail, updateUserName, error } = useAuth();
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || '/home';
@@ -27,8 +27,27 @@ const Signup = () => {
 
     const { register, handleSubmit, formState: { errors } } = useForm();
 
+    const handleEmailChange = (event) => {
+        setEmail(event.target.value)
+    }
+    const handlePassChange = (event) => {
+        setPassword(event.target.value)
+    }
+    const handleNameChange = (event) => {
+        setUserName(event.target.value)
+    }
     const onSubmit = (data) => {
-        console.log(data)
+        handleCreateNewUser()
+            .then((userCredential) => {
+                setUser(userCredential.user);
+                setError('');
+                verifyEmail();
+                updateUserName();
+                history.push(redirect_uri);
+            })
+            .catch((error) => {
+                setError(error.message);
+            });
     }
 
     return (
@@ -61,16 +80,19 @@ const Signup = () => {
                         <form onSubmit={handleSubmit(onSubmit)} className="mt-3 mt-lg-4">
 
                             <label htmlFor="fullName" className="fw-bold">Full Name*</label>
-                            <input className="input-field" type="text" {...register("fullName", { required: true })} placeholder="Full Name" />
+                            <input className="input-field" type="text" {...register("fullName", { required: true })} placeholder="Full Name" onBlur={handleNameChange} />
                             {errors.fullName && <p className="text-danger input-error-message">This field is required.</p>}
 
                             <label htmlFor="email" className="fw-bold">Email*</label>
-                            <input className="input-field" type="email" {...register("email", { required: true })} placeholder="example@email.com" />
+                            <input className="input-field" type="email" {...register("email", { required: true })} placeholder="example@email.com" onBlur={handleEmailChange} />
                             {errors.email && <p className="text-danger input-error-message">This field is required</p>}
 
                             <label htmlFor="password" className="fw-bold">Password*</label>
-                            <input className="input-field" type="password" {...register("password", { required: true, minLength: 6 })} placeholder="minimum 6 characters" />
+                            <input className="input-field" type="password" {...register("password", { required: true, minLength: 6 })} placeholder="minimum 6 characters" onBlur={handlePassChange} />
                             {errors.password && <p className="text-danger input-error-message">{errors.password.type === 'required' ? <span>This field is required</span> : <span>Minimum six characters long</span>}</p>}
+                            {
+                                error && <p className="text-danger input-error-message">Incorrect Password. Please Try Again.</p>
+                            }
 
 
                             <button type="submit" className="btn-signInMethod signup-submit">Sign Up</button>

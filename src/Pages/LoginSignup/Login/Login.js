@@ -7,7 +7,7 @@ import useAuth from '../../../Hooks/useAuth';
 import logo from '../../../Images/logo.png';
 
 const Login = () => {
-    const { setUser, setError, signInWithGoogle } = useAuth();
+    const { setEmail, setPassword, error, setUser, setError, signInWithGoogle, handleEmailSignIn } = useAuth();
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || '/home';
@@ -25,8 +25,23 @@ const Login = () => {
 
     const { register, handleSubmit, formState: { errors } } = useForm();
 
+    const handleEmailChange = (event) => {
+        setEmail(event.target.value)
+    }
+    const handlePassChange = (event) => {
+        setPassword(event.target.value)
+    }
+
     const onSubmit = (data) => {
-        console.log(data)
+        handleEmailSignIn()
+            .then((userCredential) => {
+                setUser(userCredential.user);
+                setError('');
+                history.push(redirect_uri);
+            })
+            .catch((error) => {
+                setError(error.message);
+            });
     }
 
     return (
@@ -59,13 +74,17 @@ const Login = () => {
                         <form onSubmit={handleSubmit(onSubmit)} className="mt-3 mt-lg-4">
 
                             <label htmlFor="email" className="fw-bold">Email*</label>
-                            <input className="input-field" type="email" {...register("email", { required: true })} placeholder="example@email.com" />
+                            <input className="input-field" type="email" {...register("email", { required: true })} placeholder="example@email.com" onBlur={handleEmailChange} />
                             {errors.email && <p className="text-danger input-error-message">This field is required</p>}
 
                             <label htmlFor="password" className="fw-bold">Password*</label>
-                            <input className="input-field" type="password" {...register("password", { required: true, minLength: 6 })} placeholder="minimum 6 characters" />
+                            <input className="input-field" type="password" {...register("password", { required: true, minLength: 6 })} placeholder="minimum 6 characters" onBlur={handlePassChange} />
                             {errors.password && <p className="text-danger input-error-message">{errors.password.type === 'required' ? <span>This field is required</span> : <span>Minimum six characters long</span>}</p>}
-                            <h6 className="text-center">Fotget Password? <Link to="/signup">Reset Now</Link></h6>
+
+                            {
+                                error && <p className="text-danger input-error-message">Incorrect Password. Please Try Again.</p>
+                            }
+
                             <button type="submit" className="btn-signInMethod signup-submit">Log In</button>
                         </form>
                         <h6 className="text-center">Don't have an account? <Link to="/signup">Sign Up</Link></h6>
