@@ -18,7 +18,7 @@ const ServiceDetail = (props) => {
                     <p className="mt-2 ms-1 ms-md-2 ms-lg-3 ms-xl-5">{description}</p>
                     <h5 className="fw-bold ms-1 ms-md-2 ms-lg-3 ms-xl-5">Available Doctors - {doctor} Doctors</h5>
                     <h5 className="fw-bold ms-1 ms-md-2 ms-lg-3 ms-xl-5">Fee - ${fee}</h5>
-                    <Link to="/appointment">
+                    <Link to="/appoint-confirmed">
                         <button className="btn btn-success fw-bold ms-1 ms-md-2 ms-lg-3 ms-xl-5">Confirm Appointment</button>
                     </Link>
                 </div>
