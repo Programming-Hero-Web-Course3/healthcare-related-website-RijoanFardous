@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import Doctor from '../Doctor/Doctor';
 import './Doctors.css';
 
@@ -22,7 +23,7 @@ const Doctors = () => {
                         </Col>
                         <Col xs={12} md={7} className="mt-4 mt-md-0">
                             <p className="fs-5">Health Genic conducts the largest hospital-based research program in the United States, with an annual research budget of over $1 billionin 2019.</p>
-                            <button className="btn btn-light mt-2">Appointment</button>
+                            <Link to="/appointment"><button className="btn btn-light mt-2">Appointment</button></Link>
                         </Col>
                     </Row>
                     <Row className="row gx-3 mt-5">

@@ -7,6 +7,7 @@ import Signup from './Pages/LoginSignup/Signup/Signup';
 import Newsletter from './Pages/NewsPage/NewLetter/Newsletter';
 import NotFound from './Pages/NotFound/NotFound';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
+import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
 import Services from './Pages/ServicesPage/Services/Services';
 import Footer from './Pages/SharedComponent/Footer/Footer';
 import Header from './Pages/SharedComponent/Header/Header';
@@ -45,7 +46,9 @@ function App() {
             <Route path="/signup">
               <Signup></Signup>
             </Route>
-
+            <PrivateRoute path="/service/:serviceId">
+              <ServiceDetails></ServiceDetails>
+            </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>

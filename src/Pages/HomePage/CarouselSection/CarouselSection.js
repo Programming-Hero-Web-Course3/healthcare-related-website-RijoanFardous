@@ -1,10 +1,11 @@
 import React from 'react';
-import { Button, Carousel, Col, Container, Row } from 'react-bootstrap';
+import { Carousel, Col, Container, Row } from 'react-bootstrap';
 import './CarouselSection.css';
 
 /**** Banner Images ****/
 import banner1 from '../../../Images/home/banner1.jpg';
 import banner2 from '../../../Images/home/banner2.jpg';
+import { Link } from 'react-router-dom';
 
 
 const CarouselSection = () => {
@@ -20,7 +21,6 @@ const CarouselSection = () => {
                     <Container>
                         <Carousel.Caption className="fw-bold text-start carousel-info">
                             <h1>We Take Care <br /> Your Healthy Life.</h1>
-                            <Button className="button" variant=" bg-dark text-light ms-2">Make An Appointment</Button>
                         </Carousel.Caption>
                     </Container>
                 </Carousel.Item>
@@ -33,7 +33,6 @@ const CarouselSection = () => {
 
                     <Carousel.Caption className="fw-bold text-start carousel-info">
                         <h1>Care Whenever <br />You Need It.</h1>
-                        <Button className="button" variant=" bg-dark text-light ms-2">Make An Appointment</Button>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
@@ -48,7 +47,7 @@ const CarouselSection = () => {
                                 </svg>
                                 <h3 className="fw-bold ms-2 d-inline-block fs-4">Emergency Ambulance</h3>
                                 <p>Call 415-201-6370 for Emergency Ambulance Service.</p>
-                                <button className="btn btn-secondary fw-bold">Call Now</button>
+                                <Link to="/appointment"><button className="btn btn-secondary fw-bold">Call Now</button></Link>
                             </div>
 
                         </div>
@@ -63,7 +62,7 @@ const CarouselSection = () => {
                                 </svg>
                                 <h3 className="fw-bold ms-2 d-inline-block fs-4">Make An Appointment</h3>
                                 <p>Plase make an Appointment 3 days before. Also make sure to log in before.</p>
-                                <button className="btn btn-secondary fw-bold">Make Appointment</button>
+                                <Link to="/appointment"><button className="btn btn-secondary fw-bold">Make Appointment</button></Link>
                             </div>
 
                         </div>
@@ -77,7 +76,7 @@ const CarouselSection = () => {
                                 </svg>
                                 <h3 className="fw-bold ms-2 d-inline-block fs-4">Newsletter Pro</h3>
                                 <p>Read Our Latest News and Case Studies. Sign Up to read Newsletter.</p>
-                                <button className="btn btn-secondary fw-bold">Read Now</button>
+                                <Link to="/news"><button className="btn btn-secondary fw-bold">Read Now</button></Link>
                             </div>
 
                         </div>

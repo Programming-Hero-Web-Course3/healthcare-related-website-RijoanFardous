@@ -1,8 +1,9 @@
 import React from 'react';
 import { Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Service = (props) => {
-    const { icon, image, name, description } = props.service;
+    const { id, icon, image, name, description } = props.service;
     return (
         <Col xs={12} md={6} lg={4}>
             <div className="bg-light border">
@@ -15,7 +16,9 @@ const Service = (props) => {
                         <h3 className="fw-bold ms-2 d-inline-block fs-4">{name}</h3>
                     </div>
                     <p className="mt-2 ms-1 ms-md-2 ms-lg-3 ms-xl-5">{description}</p>
-                    <button className="btn btn-secondary fw-bold ms-1 ms-md-2 ms-lg-3 ms-xl-5">Learn More</button>
+                    <Link to={`/service/${id}`}>
+                        <button className="btn btn-secondary fw-bold ms-1 ms-md-2 ms-lg-3 ms-xl-5">Learn More</button>
+                    </Link>
                 </div>
             </div>
         </Col>

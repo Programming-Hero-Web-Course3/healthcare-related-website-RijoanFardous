@@ -30,7 +30,7 @@ const Review = () => {
                 <Row>
                     <Col xs={12} lg={6}>
                         {
-                            reviews.map(review => <div className="d-flex mb-3">
+                            reviews.map(review => <div key={review.rId} className="d-flex mb-3">
                                 <div className="py-3 reveiwer">
                                     <img src={review.image} alt="" />
                                 </div>

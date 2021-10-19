@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import FeaturedService from '../FeaturedService/FeaturedService';
 import './FeaturedServices.css';
 
@@ -21,12 +22,12 @@ const FeaturedServices = () => {
                         </Col>
                         <Col xs={12} md={7} className="mt-4 mt-md-0">
                             <p className="fs-5">Health Genic is a Registered Charity under the Charities Acts and is administered and managed in accordance with a Hospital Constitution approved by the Charities Regulatory Authority.</p>
-                            <button className="btn btn-light mt-2">View all Services</button>
+                            <Link to="/services"><button className="btn btn-light mt-2">View all Services</button></Link>
                         </Col>
                     </Row>
                 </Container>
             </Container>
-            <Container>
+            <Container className="featured-container">
                 <Row className="row g-4">
                     {
                         fServices.map(fService => <FeaturedService key={fService.id} service={fService}></FeaturedService>)

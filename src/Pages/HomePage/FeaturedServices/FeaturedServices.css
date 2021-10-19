@@ -9,7 +9,6 @@
     z-index: -400;
 }
 .fea-service{
-    margin-top: -225px;
     z-index: 1;
 }
 
@@ -17,6 +16,10 @@
     z-index: -5;
     margin-top: -275px;
     height: 350px;
+}
+
+.featured-container{
+    margin-top: -250px;
 }
 
 @media (max-width: 765px) {
