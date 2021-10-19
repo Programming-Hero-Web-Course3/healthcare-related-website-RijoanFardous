@@ -7,8 +7,10 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 
 /*****    React Router   *****/
 import { Link, NavLink } from 'react-router-dom';
+import useAuth from '../../../Hooks/useAuth';
 
 const Header = () => {
+    const { user, handleSignOut } = useAuth();
     return (
         <div>
             <Navbar bg="light" variant="light" expand="lg" fixed="top" className="shadow-sm">
@@ -19,7 +21,7 @@ const Header = () => {
                             // width="200"
                             height="50"
                             className="d-inline-block align-top"
-                            alt="motoring.io logo"
+                            alt=""
                         />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -30,7 +32,13 @@ const Header = () => {
                             <NavLink to="/news" className="nav-link" activeClassName="active-link">News</NavLink>
                             <NavLink to="/appointment" className="nav-link" activeClassName="active-link">Appointment</NavLink>
                         </Nav>
-                        <Link to="/login" className="nav-login-btn fw-bold">Log In</Link>
+                        {
+                            user.email ? <div className="d-inline-block">
+                                <p className="fw-bold d-inline fs-5">{user.displayName} </p>
+                                <Link to="/login" onClick={handleSignOut} className="nav-login-btn fw-bold">Log Out</Link>
+                            </div> : <Link to="/login" className="nav-login-btn fw-bold">Log In</Link>
+                        }
+
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
