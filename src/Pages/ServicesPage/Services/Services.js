@@ -13,15 +13,12 @@ const Services = () => {
 
     return (
         <div>
-            <Container fluid className="f-service-background mb-4 mb-md-0">
+            <Container fluid className="service-background mb-4 mb-md-0">
                 <Container className="pt-5 text-white f-service-background2">
                     <Row>
-                        <Col xs={12} md={5}>
+                        <Col xs={12}>
                             <h5>BEST CARE!</h5>
                             <h1 className="fw-bold">All of Our Services</h1>
-                        </Col>
-                        <Col xs={12} md={7} className="mt-4 mt-md-0">
-                            <p className="fs-5">Health Genic is a Registered Charity under the Charities Acts and is administered and managed in accordance with a Hospital Constitution approved by the Charities Regulatory Authority.</p>
                         </Col>
                     </Row>
                     <Row className="mt-5 text-center row gx-3">

@@ -12,3 +12,11 @@
 .case-studies{
     margin-top: 100px;
 }
+
+.service-background{
+    background-color: #025955;
+    height: 650px;
+    margin-top: 0px;
+    z-index: -500;
+    padding-top: 100px;
+}
