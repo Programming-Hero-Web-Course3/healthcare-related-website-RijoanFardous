@@ -7,7 +7,7 @@ import useAuth from '../../../Hooks/useAuth';
 import logo from '../../../Images/logo.png';
 
 const Login = () => {
-    const { setEmail, setPassword, error, setUser, setError, signInWithGoogle, handleEmailSignIn } = useAuth();
+    const { setEmail, setPassword, error, setUser, setError, signInWithGoogle, handleEmailSignIn, setIsLoading } = useAuth();
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || '/home';
@@ -21,6 +21,7 @@ const Login = () => {
             }).catch((error) => {
                 setError(error.message);
             })
+            .finally(() => setIsLoading(false))
     }
 
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -41,7 +42,8 @@ const Login = () => {
             })
             .catch((error) => {
                 setError(error.message);
-            });
+            })
+            .finally(() => setIsLoading(false))
     }
 
     return (

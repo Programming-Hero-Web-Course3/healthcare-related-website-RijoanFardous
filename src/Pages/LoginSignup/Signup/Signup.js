@@ -9,7 +9,7 @@ import { useHistory, useLocation } from 'react-router';
 
 
 const Signup = () => {
-    const { setEmail, setPassword, setUserName, setUser, setError, signInWithGoogle, handleCreateNewUser, verifyEmail, updateUserName, error } = useAuth();
+    const { setEmail, setPassword, setUserName, setUser, setError, signInWithGoogle, handleCreateNewUser, verifyEmail, updateUserName, error, setIsLoading } = useAuth();
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || '/home';
@@ -23,6 +23,7 @@ const Signup = () => {
             }).catch((error) => {
                 setError(error.message);
             })
+            .finally(() => setIsLoading(false))
     }
 
     const { register, handleSubmit, formState: { errors } } = useForm();
